@@ -1,0 +1,44 @@
+body {
+  /* background-color: ; */
+  background-color: #14131a;
+}
+
+#ele {
+  margin-top: 60px;
+}
+
+#indi {
+  color: white;
+  background-color: black;
+  padding: 2px;
+  font-size: 45px;
+  border-radius: 50%;
+  position: fixed;
+  display: block;
+  opacity: 1;
+  right: 20px;
+  bottom: 25px;
+  z-index: 996;
+  transition: all 0.4s;
+}
+
+/* .back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #2eafec;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+} */
+
+#indi:hover {
+  background-color: white;
+  color: black;
+}

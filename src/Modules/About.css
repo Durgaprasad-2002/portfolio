@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+.AboutContainer {
+  width: auto;
+  height: fit-content;
+  /* background-color: #0c1927; */
+  background-color: #14131a;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.row1 {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row1 .r1Ele1 {
+  width: auto;
+}
+#img {
+  margin: 10px 0px 10px 0px;
+  object-fit: cover;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.img-card {
+  margin: 35px 0px 0px 0px;
+  height: max-content;
+  max-width: 500px;
+  width: fit-content;
+  background-color: white;
+  z-index: -2;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* border: 3px solid darkgray; */
+}
+.img-card h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  padding: 5px 0px 5px 5px;
+  font-weight: 700;
+}
+.img-card h6 {
+  font-size: 15px;
+  padding: 0px 0px 0px 5px;
+}
+.img-card span {
+  background-color: rgb(163, 162, 162);
+  color: black;
+  margin: 0px 5px 0px 0px;
+  padding: 4px 7px 4px 7px;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.img-card button {
+  background-color: #14131a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0px 15px 5px;
+  padding: 3px 15px 3px 15px;
+}
+.img-card button:hover {
+  background-color: #3d3d40;
+}
+.row1 .r1Ele2 {
+  width: 650px;
+  min-width: 280px;
+  margin: 30px;
+}
+.row1 .r1Ele2 p {
+  font-weight: 350;
+  padding-left: 20px;
+  font-size: large;
+  color: rgb(244, 241, 241);
+  text-align: justify;
+}
+.row1 .r1Ele2 span {
+  color: rgb(104, 154, 230);
+  font-weight: 450;
+  text-transform: capitalize;
+}
+
+.title-edu {
+  text-decoration: underline rgb(222, 222, 223) 2.5px;
+  text-underline-offset: 15px;
+  margin-left: 15px;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  /* font-family: MuseoSans-Regular; */
+  font-size: 38px;
+}
+
+#edu-card {
+  min-height: 150px;
+  color: white;
+  background-color: #1c1b23;
+  padding: 10px 5px 10px 20px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+#edu-card h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+#edu-card h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#edu-card h6 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#edu-card h6 span {
+  float: right;
+  padding-right: 20px;
+  font-weight: 500;
+}
+
+/* 
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
+.background {
+  margin: 20px 0px 0px 20px;
+  background-color: var(--background);
+  height: 30px;
+}
+
+.button {
+  color: #fff;
+  cursor: pointer;
+  line-height: 2.5rem;
+  max-width: 200px;
+  position: relative;
+  text-transform: uppercase;
+  justify-content: center;
+  transition: all is ease-in;
+  font-size: 1rem;
+  width: 100%;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+}
+
+.button:hover {
+  color: #ff9950;
+}
+
+.button svg {
+  height: 40px;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.button rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 450, 0;
+  transition: all 0.5s linear;
+}
+
+.button:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 20, 300;
+  stroke-dashoffset: 48;
+  stroke: #ff9950;
+  transition: all 25 cubic-bezier (0.22, 1, 0.25, 1);
+} */

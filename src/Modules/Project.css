@@ -1,0 +1,142 @@
+body {
+  /* background-color: #0c1927; */
+  background-color: #14131a;
+}
+
+.Prow1 {
+  padding: 30px;
+}
+.Prow1 h2 {
+  text-decoration: underline rgb(222, 222, 223) 2.5px;
+  text-underline-offset: 15px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  /* font-family: MuseoSans-Regular; */
+  font-size: 38px;
+}
+.Prow1 p {
+  font-weight: 300;
+  color: lightgray;
+  text-align: left;
+}
+.Prow1 p a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400px;
+}
+
+.Prow2 h2 {
+  border-left: 1.5px solid lightgray;
+  padding-left: 5px;
+  color: white;
+}
+
+.Prow3 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.card img {
+  width: 300px;
+  height: 280px;
+  fill: #333;
+  object-fit: cover;
+  object-position: left;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  /* box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); */
+}
+
+.card__content {
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f6f6;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  text-align: left;
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+#label {
+  font-weight: 500;
+  color: black;
+}
+
+#demoButton {
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0px 3px 3px 3px;
+}
