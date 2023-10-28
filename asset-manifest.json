@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bf332342.css",
-    "main.js": "/portfolio/static/js/main.443121b2.js",
+    "main.css": "/portfolio/static/css/main.181c3483.css",
+    "main.js": "/portfolio/static/js/main.8a3bde21.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/DurgaPrasad_Resume(Final).pdf": "/portfolio/static/media/DurgaPrasad_Resume(Final).b308cd173745ba996f4e.pdf",
     "static/media/20MH1A04C3.jpg": "/portfolio/static/media/20MH1A04C3.8b3b060eff1bad1eb7ab.jpg",
@@ -10,12 +10,12 @@
     "static/media/hacker.png": "/portfolio/static/media/hacker.c5bede0098e3bf3a222e.png",
     "static/media/github.png": "/portfolio/static/media/github.4b39480e0866bd2007d5.png",
     "index.html": "/portfolio/index.html",
-    "main.bf332342.css.map": "/portfolio/static/css/main.bf332342.css.map",
-    "main.443121b2.js.map": "/portfolio/static/js/main.443121b2.js.map",
+    "main.181c3483.css.map": "/portfolio/static/css/main.181c3483.css.map",
+    "main.8a3bde21.js.map": "/portfolio/static/js/main.8a3bde21.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf332342.css",
-    "static/js/main.443121b2.js"
+    "static/css/main.181c3483.css",
+    "static/js/main.8a3bde21.js"
   ]
 }
