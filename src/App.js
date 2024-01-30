@@ -8,7 +8,7 @@ import Loader from "./Modules/Loader";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { useState } from "react";
-
+ 
 function App() {
   let [pos, changepos] = useState("none");
   let mybutton = document.getElementById("indi");
