@@ -1,106 +1,134 @@
 import React from "react";
 import "./Project.css";
-import Navbar_ from "./Navbar";
-import { useState } from "react";
-import Loader from "./Loader";
-export default function Project() {
-  let [time, setTime] = useState(0);
-  const Content = (
-    <>
-      {/* <Navbar_ /> */}
-      <div className="ProjectContainer" id="pro">
-        <div className="Prow1">
-          <h2>Projects</h2>
-          <p>
-            This page contains some of my projects. If you have a project in
-            mind or you want more details on any of the projects below, please
-            send me a DM on my
-            <a
-              href="https://www.linkedin.com/in/veera-venkata-sai-durga-prasad-thota-60653020a/"
-              target="new"
-            >
-              <b> LinkedIn </b>
-            </a>{" "}
-            so we can discuss.
-          </p>
-        </div>
-        <div className="Prow3">
-          <div class="card">
-            <img src="https://img.freepik.com/free-vector/tiny-doctors-patients-near-hospital-flat-vector-illustration-therapist-face-mask-saying-goodbye-cured-people-near-medical-building-ambulance-emergency-clinic-concept_74855-25338.jpg" />
-            <div class="card__content">
-              <p class="card__title">Hospital Management System</p>
-              <p class="card__description">
-                Aim of the project is to digiatalize the manual work in
-                Hospitals. In this Web Application we added fileds to generate
-                OP,Patient details,Medical Stock Availability and more.
-                <br />
-                <span id="label">Tech Stack :</span> HTML, CSS , Bootstarp, Java
-                Script, React Js, Node Js, Express Js, MongoDB Cluster
-              </p>
-              <a
-                href="https://github.com/Durgaprasad-2002/ApolloShineProject"
-                target="new"
-              >
-                <button id="demoButton">Source Code</button>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://uploads-ssl.webflow.com/615723192f6aa231573d2391/621762f0c54e9f846915b3c3_illustration_simplify-removebg-preview.png" />
-            <div class="card__content">
-              <p class="card__title">Car Rental Management System</p>
-              <p class="card__description">
-                It's a Car Reantal Application ,here we created two Logins
-                dashboards User, Owner based on the tyoe of login the
-                Application is changes.
-                <br />
-                <span id="label">Tech Stack :</span> HTML, CSS , Bootstarp, Java
-                Script, React Js, Node Js, Express Js, MongoDB Cluster
-              </p>
-              <a
-                href="https://github.com/Durgaprasad-2002/ApolloShineProject"
-                target="new"
-              >
-                <button id="demoButton">Source Code</button>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://www.hotstats.com/hubfs/hotel_restaurant_waiter-1.jpeg" />
-            <div class="card__content">
-              <p class="card__title">Restaurant Management System</p>
-              <p class="card__description">
-                A Console based Java Application to Order Food. In This
-                Application the Owner can get status of Food Orders.
-                <br />
-                <span id="label">Tech Stack :</span> Java, Ms Excel ,Vs Code
-              </p>
-              <a
-                href="https://github.com/Durgaprasad-2002/HeroViredTask3"
-                target="new"
-              >
-                <button id="demoButton">Source Code</button>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="https://www.designer-daily.com/wp-content/uploads/2020/03/web-dev-business.jpg" />
-            <div class="card__content">
-              <p class="card__title">Minor Projects</p>
-              <p class="card__description">
-                I developed so many basic web Applications using HTML, CSS ,Java
-                Script, React Js and also Along with that I do programming also,
-                visit my github to view sources codes.
-              </p>
-              <a href="https://github.com/Durgaprasad-2002" target="new">
-                <button id="demoButton">Source Code</button>
-              </a>
-            </div>
-          </div>
+
+function ProjectCard({ image, altText, title, description, links }) {
+  return (
+    <div className="project-card">
+      <img className="card-img-top" src={image} alt={altText} />
+      <div className="card-body">
+        <h5 className="card-title">{title}</h5>
+        <p className="card-text">{description}</p>
+        <div className="button-container">
+          {links.map((link, index) => (
+            <a key={index} href={link.url} className="btn btn-light btn-sm m-1">
+              {link.text}
+            </a>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
-  setTimeout(() => setTime(2), 0);
-  return <>{time == 2 ? Content : <Loader />}</>;
+}
+
+export default function Project() {
+  const projects = [
+    {
+      image:
+        "https://img.freepik.com/free-vector/tiny-doctors-patients-near-hospital-flat-vector-illustration-therapist-face-mask-saying-goodbye-cured-people-near-medical-building-ambulance-emergency-clinic-concept_74855-25338.jpg",
+      altText: "Hospital Management Application",
+      title: "Hospital Management Application",
+      description:
+        "Developed using Bootstrap, JavaScript, React Js, Node Js, MongoDB Cluster.",
+      links: [
+        {
+          url: "https://github.com/Durgaprasad-2002/ApolloShineProject",
+          text: "Source Code",
+        },
+      ],
+    },
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnF93OQA_2Kdfebr7qAB11PbsWgSQSewosQ&s",
+      altText: "Car Rental Application",
+      title: "Car Rental Application",
+      description:
+        "Developed using Bootstrap, React Js, Node Js, MongoDB and allows the user to manage Car bookings.",
+      links: [
+        {
+          url: "https://github.com/Durgaprasad-2002/Client_Car",
+          text: "Live Link",
+        },
+      ],
+    },
+    {
+      image: "https://www.hotstats.com/hubfs/hotel_restaurant_waiter-1.jpeg",
+      altText: "Restaurant Application",
+      title: "Restaurant Application",
+      description:
+        "This Java console-based task management system simplifies organization and boosts productivity.",
+      links: [
+        {
+          url: "https://github.com/Durgaprasad-2002/HeroViredTask3",
+          text: "Source Code",
+        },
+      ],
+    },
+    {
+      image:
+        "https://www.designer-daily.com/wp-content/uploads/2020/03/web-dev-business.jpg",
+      altText: "Minor Projects",
+      title: "Minor Projects",
+      description:
+        "Developed various basic web applications using HTML, CSS, JavaScript, React Js, NodeJs, MongoDB.",
+      links: [
+        { url: "https://github.com/Durgaprasad-2002/", text: "Source Codes" },
+      ],
+    },
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY23c3UXCGS-CXNb-SSvsP5DFoGGzzDhY4s6-EYInUtA&s",
+      altText: "DNS Management Tool",
+      title: "DNS Management Tool",
+      description:
+        "Developed a robust DNS management tool designed to handle DNS configurations with features comparable to AWS Route 53.",
+      links: [
+        {
+          url: "https://github.com/prasaddurga31/FrontEndDNS",
+          text: "FrontEnd Code",
+        },
+        {
+          url: "https://github.com/prasaddurga31/BackEndDNS",
+          text: "BackEnd Code",
+        },
+      ],
+    },
+    {
+      image:
+        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPSWfTFhRH5i2L7R8T4VnZak5ozoCQ6yKoVE6ENY1stxm8OkMK",
+      altText: "STAAR Exports & Imports",
+      title: "STAAR Exports & Imports (Freelance)",
+      description:
+        "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
+      links: [{ url: "https://staarfoods.com/", text: "Live Link" }],
+    },
+    {
+      image:
+        "https://lawacademybhopal.com/wp-content/uploads/2024/02/mba-after-law-llb.jpg",
+      altText: "Legis Code",
+      title: "Legis Code (Freelance)",
+      description:
+        "Led the development of Legis Code, a comprehensive platform for legal practitioners, featuring a categorized repository of laws and a dynamic blog platform.",
+      links: [{ url: "https://hasiniworld.in/", text: "Live Link" }],
+    },
+  ];
+
+  return (
+    <div className="project-container">
+      <div className="Prow1" id="pro">
+        <h2 style={{ marginLeft: "-25px" }}>Projects</h2>
+      </div>
+      <div className="project-content">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            image={project.image}
+            altText={project.altText}
+            title={project.title}
+            description={project.description}
+            links={project.links}
+          />
+        ))}
+      </div>
+    </div>
+  );
 }

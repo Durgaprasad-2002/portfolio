@@ -1,187 +1,186 @@
 @import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
-.AboutContainer {
-  width: auto;
-  height: fit-content;
-  /* background-color: #0c1927; */
+
+.about-container {
+  width: 100%;
   background-color: #14131a;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
-.row1 {
+
+.about-row {
+  margin-top: -15px;
   width: 100%;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 15px;
 }
 
-.row1 .r1Ele1 {
-  width: auto;
+.profile-container {
+  flex: 1;
+  margin-top: 25px;
 }
-#img {
-  margin: 10px 0px 10px 0px;
+
+#profile-img {
   object-fit: cover;
-  z-index: 10;
+  object-position: top;
   width: 100%;
-  height: auto;
+  min-width: 250px;
+  height: 250px;
   border-radius: 10px;
 }
 
 .img-card {
-  margin: 35px 0px 0px 0px;
-  height: max-content;
-  max-width: 500px;
+  margin: 5px;
   width: fit-content;
-  background-color: white;
-  z-index: -2;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  padding: 5px;
-  border-radius: 10px;
+  background-color: #1c1b23;
+  border: 1px solid #2d2d2d;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Mulish", sans-serif;
   overflow: hidden;
-  /* border: 3px solid darkgray; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
 }
-.img-card h3 {
-  margin-top: 20px;
-  font-size: 22px;
-  padding: 5px 0px 5px 5px;
-  font-weight: 700;
+
+.img-card-inner {
+  flex: 1;
 }
+
+.img-card h3,
 .img-card h6 {
-  font-size: 15px;
-  padding: 0px 0px 0px 5px;
+  color: white;
+  padding: 5px;
 }
+
 .img-card span {
-  background-color: rgb(163, 162, 162);
+  background-color: white;
   color: black;
-  margin: 0px 5px 0px 0px;
-  padding: 4px 7px 4px 7px;
+  margin-right: 5px;
+  padding: 4px 7px;
   font-size: 13px;
-  font-weight: 400;
   border-radius: 5px;
+  min-width: fit-content !important;
 }
 
 .img-card button {
-  background-color: #14131a;
+  background-color: rgb(123, 123, 243);
   color: white;
   border: none;
   border-radius: 5px;
-  margin: 20px 0px 15px 5px;
-  padding: 3px 15px 3px 15px;
+  margin: 5px;
+  padding: 2px 17px;
 }
+
 .img-card button:hover {
-  background-color: #3d3d40;
+  background-color: rgb(143, 143, 247);
 }
-.row1 .r1Ele2 {
-  width: 650px;
-  min-width: 280px;
-  margin: 30px;
+
+.bio-container {
+  flex: 1;
+  width: auto;
+  min-width: 300px;
+  margin: 0 5px;
 }
-.row1 .r1Ele2 p {
-  font-weight: 350;
-  padding-left: 20px;
-  font-size: large;
+
+.bio-container p {
+  margin-top: 25px;
+  font-size: 17.5px;
   color: rgb(244, 241, 241);
-  text-align: justify;
+  text-align: left;
 }
-.row1 .r1Ele2 span {
+
+.bio-container span {
   color: rgb(104, 154, 230);
   font-weight: 450;
   text-transform: capitalize;
 }
 
-.title-edu {
-  text-decoration: underline rgb(222, 222, 223) 2.5px;
-  text-underline-offset: 15px;
+.section-title {
+  text-decoration: underline rgb(104, 154, 230) 1px;
+  text-underline-offset: 10px;
   margin-left: 15px;
-  font-weight: 700;
+  font-weight: 500;
   color: white;
   text-align: left;
-  /* font-family: MuseoSans-Regular; */
-  font-size: 38px;
+  font-size: 29px;
 }
 
-#edu-card {
-  min-height: 150px;
+.SkillCardItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edu-card,
+.skill-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: white;
   background-color: #1c1b23;
   padding: 10px 5px 10px 20px;
-  margin: 10px;
+  margin: 5px;
   border-radius: 15px;
+  min-width: 250px;
 }
 
-#edu-card h4 {
+.edu-card h4,
+.skill-card h4 {
   font-size: 22px;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
-#edu-card h5 {
+
+.edu-card h5,
+.skill-card h5 {
   font-size: 18px;
   font-weight: 400;
 }
 
-#edu-card h6 {
+.edu-card h6 {
   font-size: 15px;
+  width: 100%;
   font-weight: 300;
 }
 
-#edu-card h6 span {
+.edu-card h6 span {
   float: right;
   padding-right: 20px;
   font-weight: 500;
 }
 
-/* 
-@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
-
-.background {
-  margin: 20px 0px 0px 20px;
-  background-color: var(--background);
-  height: 30px;
-}
-
-.button {
-  color: #fff;
-  cursor: pointer;
-  line-height: 2.5rem;
-  max-width: 200px;
-  position: relative;
-  text-transform: uppercase;
-  justify-content: center;
-  transition: all is ease-in;
-  font-size: 1rem;
-  width: 100%;
-  letter-spacing: 0.3rem;
-  font-weight: 600;
-  text-decoration: none;
+.skill-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.button:hover {
-  color: #ff9950;
+.skill-wrapper h5 {
+  background-color: #14131a;
+  border: 1px solid lightgray;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 12px;
+  border-radius: 5px;
+  margin: 8px 8px 8px 0;
 }
 
-.button svg {
-  height: 40px;
-  left: 0;
-  top: 0;
-  position: absolute;
-  width: 100%;
+.skill-wrapper h5:nth-child(1) {
+  border-color: rgb(234, 96, 96);
 }
 
-.button rect {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 2;
-  stroke-dasharray: 450, 0;
-  transition: all 0.5s linear;
+.skill-wrapper h5:nth-child(2) {
+  border-color: slateblue;
 }
 
-.button:hover rect {
-  stroke-width: 5;
-  stroke-dasharray: 20, 300;
-  stroke-dashoffset: 48;
-  stroke: #ff9950;
-  transition: all 25 cubic-bezier (0.22, 1, 0.25, 1);
-} */
+.skill-wrapper h5:nth-child(3) {
+  border-color: lightgreen;
+}
+
+.skill-wrapper h5:nth-child(4) {
+  border-color: yellow;
+}

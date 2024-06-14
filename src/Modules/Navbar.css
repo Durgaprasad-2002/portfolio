@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
 #nav {
-  padding-top: 22px;
-  /* background-color: #0c1927; */
-  background-color: #14131a;
-  margin: 20px 0px 10px 0px;
+  z-index: 20;
+  background: #14131a;
+  margin: 15px 0px 5px 0px;
+  /* background-color: red; */
+  padding: 0px;
 }
 
 #basic-nav-dropdown {
@@ -11,13 +14,13 @@
   background-color: #0c1927;
 }
 .me-auto {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Mulish", sans-serif;
   color: lightgray;
   border: 3px solid rgb(33, 41, 48);
   border-radius: 30px;
   padding: 0px 20px 0px 20px;
   margin-left: 35%;
-  height: 50px;
+  min-height: 49px;
 }
 
 .navbar-nav .nav-link.active,
@@ -28,9 +31,6 @@
 @media screen and (max-width: 768px) {
   .me-auto {
     border: none;
-  }
-  #nav {
-    margin-bottom: 60px;
   }
 }
 .me-auto a {
@@ -50,7 +50,7 @@
 
 #basic-nav-dropdown,
 .me-auto a:hover {
-  color: white;
+  color: rgb(104, 154, 230);
   border-bottom: 3px solid white;
 }
 
@@ -97,4 +97,25 @@
   height: 25px;
   background-color: slateblue;
   border-radius: 10%;
+}
+
+.outer {
+  width: 60px;
+  height: fit-content;
+  background-color: #14131a;
+  display: flex;
+  flex-direction: column;
+  margin: -20px;
+  padding: 0px;
+}
+.inner {
+  border-radius: 20px;
+  height: 2px !important;
+  width: 30px;
+  background-color: white;
+  margin: 5px 0px 4px 0px;
+}
+
+.outer:any-link {
+  background: red;
 }
