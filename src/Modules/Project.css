@@ -40,6 +40,8 @@ body {
   max-width: 450px;
   min-width: 290px;
   padding: 10px;
+  transition: all 0.3s linear;
+  transform: scale(0);
 }
 
 .project-card img {

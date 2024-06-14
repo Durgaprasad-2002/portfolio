@@ -1,5 +1,6 @@
 import React from "react";
 import "./Project.css";
+import { useEffect } from "react";
 
 function ProjectCard({ image, altText, title, description, links }) {
   return (
@@ -21,6 +22,32 @@ function ProjectCard({ image, altText, title, description, links }) {
 }
 
 export default function Project() {
+  useEffect(() => {
+    function Animate() {
+      const imgContainers = document.querySelectorAll(".project-card");
+
+      const observerOptions = {
+        threshold: 0.1, // Adjust this threshold as needed
+      };
+
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transform = "scale(1)";
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(
+        observerCallback,
+        observerOptions
+      );
+
+      imgContainers.forEach((container) => observer.observe(container));
+    }
+
+    Animate();
+  }, []);
   const projects = [
     {
       image:

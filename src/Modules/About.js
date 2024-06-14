@@ -5,9 +5,36 @@ import Resume from "./Images/SaiDurgaPrasad__Resume.pdf";
 import img from "./Images/20MH1A04C3.jpg";
 import { BsDownload } from "react-icons/bs";
 import Navbar_ from "./Navbar";
+import { useEffect } from "react";
 
 const About = () => {
   const roles = ["Full Stack Developer", "Programmer", "Designer"];
+  useEffect(() => {
+    function Animate() {
+      const imgContainers = document.querySelectorAll(".skill-card");
+
+      const observerOptions = {
+        threshold: 0.1, // Adjust this threshold as needed
+      };
+
+      const observerCallback = (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.transform = "scale(1)";
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(
+        observerCallback,
+        observerOptions
+      );
+
+      imgContainers.forEach((container) => observer.observe(container));
+    }
+
+    Animate();
+  }, []);
 
   return (
     <>

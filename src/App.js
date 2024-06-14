@@ -5,6 +5,7 @@ import Loader from "./Loader";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { Suspense, useState } from "react";
 import { lazy } from "react";
+import { useEffect } from "react";
 
 const Navbar_ = lazy(() => import("./Modules/Navbar"));
 const About = lazy(() => import("./Modules/About"));
@@ -22,9 +23,6 @@ function App() {
         <br />
         <Project />
         <Contact />
-        {/* <a href="#">
-          <AiOutlineArrowUp style={{ display: pos }} id="indi" />
-        </a> */}
       </div>
     </Suspense>
   );
