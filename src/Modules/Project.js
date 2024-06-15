@@ -65,7 +65,7 @@ export default function Project() {
     },
     {
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnF93OQA_2Kdfebr7qAB11PbsWgSQSewosQ&s",
+        "https://media.istockphoto.com/id/1290071290/vector/rental-car-icon.jpg?s=612x612&w=0&k=20&c=q4EsvU3jJJYbcZTJ1EzKh6c-Dvy39HagvAUgTCRK9bE=",
       altText: "Car Rental Application",
       title: "Car Rental Application",
       description:

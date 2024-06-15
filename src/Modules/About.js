@@ -8,7 +8,7 @@ import Navbar_ from "./Navbar";
 import { useEffect } from "react";
 
 const About = () => {
-  const roles = ["Full Stack Developer", "Programmer", "Designer"];
+  const roles = ["MERN Stack Developer", "Programmer", "Designer"];
   useEffect(() => {
     function Animate() {
       const imgContainers = document.querySelectorAll(".skill-card");

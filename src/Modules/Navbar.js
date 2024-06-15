@@ -25,25 +25,25 @@ function NAV() {
               <Nav.Link>
                 About
                 <br />
-                <div id="div"></div>
+                <span id="div"></span>
               </Nav.Link>
 
               <Nav.Link href="#pro">
                 Projects
                 <br />
-                <div id="div"></div>
+                <span id="div"></span>
               </Nav.Link>
 
               <Nav.Link href="#code">
                 coding profiles
                 <br />
-                <div id="div"></div>
+                <span id="div"></span>
               </Nav.Link>
 
               <Nav.Link href="#skill">
                 Skills
                 <br />
-                <div id="div"></div>
+                <span id="div"></span>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
