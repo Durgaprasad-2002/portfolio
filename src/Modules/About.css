@@ -132,8 +132,9 @@
 }
 
 .skill-card {
-  transition: all 0.5s linear;
-  transform: scale(0);
+  transition: all 0.5s ease-in;
+  transform: scale(0.7);
+  opacity: 0;
 }
 
 .edu-card h4,

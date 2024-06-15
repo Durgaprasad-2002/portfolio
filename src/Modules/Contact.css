@@ -40,7 +40,8 @@
 .back-btn {
   border: 1.3px solid white;
   background: none;
-  font-weight: 300;
+  font-weight: 350;
+  text-transform: uppercase;
   color: white;
   border-radius: 4px;
   margin-left: 15px;
@@ -71,7 +72,8 @@
   border: 1.3px solid white;
   color: white;
   border-radius: 4px;
-  font-weight: 300;
+  font-weight: 350;
+  text-transform: uppercase;
   margin-left: 5px;
   padding: 3px 14px 3px 14px;
 }

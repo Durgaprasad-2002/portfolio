@@ -34,6 +34,7 @@ export default function Project() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.style.transform = "scale(1)";
+            entry.target.style.opacity = "1";
           }
         });
       };
