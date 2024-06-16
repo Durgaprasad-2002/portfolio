@@ -3,8 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./About.css";
 import Resume from "./Images/SaiDurgaPrasad__Resume.pdf";
 import img from "./Images/20MH1A04C3.jpg";
-import { BsDownload } from "react-icons/bs";
-import Navbar_ from "./Navbar";
 import { useEffect } from "react";
 
 const About = () => {
@@ -63,8 +61,9 @@ const About = () => {
                     <span>Node.Js</span>
                     <span>MongoDB</span>
                   </h6>
+
                   <a href="tel:+91-9177943677">
-                    <button>Contact me</button>
+                    <button>Contact</button>
                   </a>
                   <a href={Resume} download="SaiDurgaPrasad_Resume.pdf">
                     <button>Download Resume</button>
@@ -80,13 +79,23 @@ const About = () => {
               have been working as a web developer for the past year, mainly
               focused on <span>web technologies</span>.
               <br />
-              <br />
-              I feel comfortable working with technologies like Java,
+              <br />I feel comfortable working with technologies like Java,
               JavaScript, React, Node.js, MongoDB, MySql and many other
-              technologies in the web ecosystem.
+              technologies in the web ecosystem. I love <span>programming</span>
+              , design, user interfaces, and open-source, and that's what I'm
+              passionate about.
               <br />
-              <br />I love <span>programming</span>, design, user interfaces,
-              and open-source, and that's what I'm passionate about.
+              <a
+                href="https://www.linkedin.com/in/veera-venkata-sai-durga-prasad-thota-60653020a/"
+                target="new"
+              >
+                <button className="btn btn-primary btn-md me-2">
+                  LinkedIn
+                </button>
+              </a>
+              <a href="https://github.com/Durgaprasad-2002" target="new">
+                <button className="btn btn-light">GitHub</button>
+              </a>
             </p>
           </div>
         </div>

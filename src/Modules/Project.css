@@ -17,20 +17,20 @@ body {
 }
 
 .project-container {
-  padding: 25px;
+  padding: 15px;
 }
 
 .project-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
   justify-content: space-around;
 }
 
 .project-card {
   flex: 1;
   background: #1c1b23;
-  border: 1px solid rgb(56, 56, 56);
+  /* border: 1px solid rgb(56, 56, 56); */
   color: white;
   border-radius: 10px;
   overflow-x: hidden;
@@ -43,6 +43,7 @@ body {
   transition: all 0.5s ease-in;
   transform: scale(0.7);
   opacity: 0;
+  margin-bottom: 10px;
 }
 
 .project-card img {
