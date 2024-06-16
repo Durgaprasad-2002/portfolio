@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./About.css";
-import Resume from "./Images/SaiDurgaPrasad__Resume.pdf";
+import Resume from "./Images/VeeraVenkataSaiDurgaPrasadThota_Resume.pdf";
 import img from "./Images/20MH1A04C3.jpg";
 import { useEffect } from "react";
 
