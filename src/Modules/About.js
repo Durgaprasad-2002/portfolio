@@ -37,7 +37,7 @@ const About = () => {
 
   return (
     <>
-      <div className="about-container">
+      <div className="about-container" id="about">
         <div className="about-row">
           <div className="profile-container">
             <Suspense fallback="Loading...">

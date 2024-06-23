@@ -7,7 +7,7 @@ const Loader = () => {
     height: "100vh",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgb(9, 9, 9)",
+    backgroundColor: " #14131a !important",
     margin: 0,
     padding: 0,
   };
@@ -16,11 +16,9 @@ const Loader = () => {
     position: "relative",
     width: "100px",
     height: "100px",
-    backgroundColor: "rgb(151, 212, 251)",
-    borderRadius: "15px",
-    border: "4px solid rgb(43, 164, 239)",
+    backgroundColor: "rgb(43, 164, 239)",
     willChange: "transform",
-    animation: "Rotate 4s ease infinite forwards",
+    animation: "Rotate 3s ease infinite forwards",
   };
 
   const imgLogoStyle = {
@@ -34,7 +32,7 @@ const Loader = () => {
 
   const keyframes = `
     @keyframes Rotate {
-      0% {
+      0% ,100%{
         border-radius: 50%;
         transform: rotate(0deg);
       }
@@ -49,10 +47,6 @@ const Loader = () => {
       75% {
         border-radius: 50%;
         transform: rotate(270deg);
-      }
-      100% {
-        border-radius: 50%;
-        transform: rotate(0deg);
       }
     }
   `;
