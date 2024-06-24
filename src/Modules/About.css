@@ -9,18 +9,12 @@
 }
 
 .about-row {
-  margin-top: -15px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
-  padding: 15px;
-}
-
-.profile-container {
-  flex: 1;
-  margin-top: 25px;
+  align-items: flex-start;
+  padding: 10px;
 }
 
 #profile-img {
@@ -33,10 +27,10 @@
 }
 
 .img-card {
-  margin: 5px;
+  flex: 1;
+  margin: 7px;
   width: fit-content;
   background-color: #1c1b23;
-  /* border: 1px solid #2d2d2d; */
   padding: 10px;
   border-radius: 15px;
   font-family: "Mulish", sans-serif;
@@ -86,11 +80,10 @@
   width: auto;
   min-width: 300px;
   margin: 0 5px;
-  padding: 0px 5px;
+  padding: 10px;
 }
 
 .bio-container p {
-  margin-top: 25px;
   font-size: 17.5px;
   color: rgb(244, 241, 241);
   text-align: left;
@@ -103,8 +96,9 @@
 }
 
 .section-title {
+  font-family: "Mulish", sans-serif;
   text-decoration: underline rgb(104, 154, 230) 1px;
-  text-underline-offset: 10px;
+  text-underline-offset: 5px;
   margin-left: 15px;
   font-weight: 500;
   color: white;
@@ -140,14 +134,15 @@
 
 .edu-card h4,
 .skill-card h4 {
-  font-size: 22px;
-  /* font-weight: 700; */
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
 }
 
 .edu-card h5,
 .skill-card h5 {
+  font-family: "Mulish", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .edu-card h6 {

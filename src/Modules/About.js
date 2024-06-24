@@ -99,7 +99,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <br />
+
         <div className="container-fluid">
           <h2 className="section-title">Education</h2>
           <br />
