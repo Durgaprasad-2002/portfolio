@@ -86,7 +86,7 @@ const About = () => {
               passionate about.
               <br />
               <a
-                href="https://www.linkedin.com/in/veera-venkata-sai-durga-prasad-thota-60653020a/"
+                href="https://www.linkedin.com/in/durgaprasadthota/"
                 target="new"
               >
                 <button className="btn btn-primary btn-md me-2">

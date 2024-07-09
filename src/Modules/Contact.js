@@ -31,7 +31,7 @@ export default function Contact() {
             <div className="col-md-6">
               <div className="digiAccounts">
                 <a
-                  href="https://www.linkedin.com/in/veera-venkata-sai-durga-prasad-thota-60653020a/"
+                  href="https://www.linkedin.com/in/durgaprasadthota/"
                   target="new"
                 >
                   {" "}
