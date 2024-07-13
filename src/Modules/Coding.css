@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
 .content-box {
+  font-family: "Mulish", sans-serif;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

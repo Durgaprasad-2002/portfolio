@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
 body {
   background-color: #14131a;
 }
@@ -25,7 +27,7 @@ body {
 .project-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   justify-content: space-evenly;
 }
 
@@ -45,7 +47,7 @@ body {
   transition: all 0.5s ease-in;
   transform: scale(0.7);
   opacity: 0;
-  margin-bottom: 10px;
+  font-family: "Mulish", sans-serif;
 }
 
 .project-card img {
@@ -72,7 +74,7 @@ body {
 }
 
 .card-text {
-  font-weight: 300;
+  font-weight: lighter;
   text-align: left;
   line-height: 20px;
   font-size: 15px;

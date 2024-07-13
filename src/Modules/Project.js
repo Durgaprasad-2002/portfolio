@@ -11,7 +11,12 @@ function ProjectCard({ image, altText, title, description, links }) {
         <p className="card-text">{description}</p>
         <div className="button-container">
           {links.map((link, index) => (
-            <a key={index} href={link.url} className="btn btn-light btn-sm m-1">
+            <a
+              key={index}
+              href={link.url}
+              target="new"
+              className="btn btn-light btn-sm m-1"
+            >
               {link.text}
             </a>
           ))}
@@ -52,17 +57,40 @@ export default function Project() {
   const projects = [
     {
       image:
-        "https://img.freepik.com/free-vector/tiny-doctors-patients-near-hospital-flat-vector-illustration-therapist-face-mask-saying-goodbye-cured-people-near-medical-building-ambulance-emergency-clinic-concept_74855-25338.jpg",
-      altText: "Hospital Management Application",
-      title: "Hospital Management Application",
+        "https://www.lyyti.com/hs-fs/hubfs/1_Images/Blog/event-management-system.jpg?width=2000&name=event-management-system.jpg",
+      altText: "Event Management",
+      title: "Event Management",
       description:
-        "Developed using Bootstrap, JavaScript, React Js, Node Js, MongoDB Cluster.",
+        "Developed dynamic React-based web app integrating with Google Calendar API for CRUD operations, featuring secure Google Auth login.",
       links: [
         {
-          url: "https://github.com/Durgaprasad-2002/ApolloShineProject",
-          text: "Source Code",
+          url: "https://event-app-durgaprasad-2002s-projects.vercel.app/",
+          text: "Try it!",
         },
       ],
+    },
+    {
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY23c3UXCGS-CXNb-SSvsP5DFoGGzzDhY4s6-EYInUtA&s",
+      altText: "DNS Management Tool",
+      title: "DNS Management Tool",
+      description:
+        "Developed a robust DNS management tool designed to handle DNS configurations with features comparable to AWS Route 53.",
+      links: [
+        {
+          url: "https://dns-guru.vercel.app/",
+          text: "Try it!",
+        },
+      ],
+    },
+    {
+      image:
+        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPSWfTFhRH5i2L7R8T4VnZak5ozoCQ6yKoVE6ENY1stxm8OkMK",
+      altText: "STAAR Exports & Imports",
+      title: "STAAR Exports & Imports (Freelance)",
+      description:
+        "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
+      links: [{ url: "https://staarfoods.com/", text: "Try it!" }],
     },
     {
       image:
@@ -73,8 +101,32 @@ export default function Project() {
         "Developed using Bootstrap, React Js, Node Js, MongoDB and allows the user to manage Car bookings.",
       links: [
         {
-          url: "https://github.com/Durgaprasad-2002/Client_Car",
-          text: "Live Link",
+          url: "https://durgaprasad-2002.github.io/Client_Car/",
+          text: "Try it!",
+        },
+      ],
+    },
+    {
+      image:
+        "https://lawacademybhopal.com/wp-content/uploads/2024/02/mba-after-law-llb.jpg",
+      altText: "Legis Code",
+      title: "Legis Code (Freelance)",
+      description:
+        "A comprehensive platform for legal practitioners, featuring a categorized repository of laws.",
+      links: [{ url: "https://hasiniworld.in/", text: "Try it!" }],
+    },
+
+    {
+      image:
+        "https://img.freepik.com/free-vector/tiny-doctors-patients-near-hospital-flat-vector-illustration-therapist-face-mask-saying-goodbye-cured-people-near-medical-building-ambulance-emergency-clinic-concept_74855-25338.jpg",
+      altText: "Hospital Management Application",
+      title: "Hospital Management Application",
+      description:
+        "Developed using Bootstrap, JavaScript, React Js, Node Js, MongoDB Cluster.",
+      links: [
+        {
+          url: "https://github.com/Durgaprasad-2002/ApolloShineProject",
+          text: "Source Code",
         },
       ],
     },
@@ -101,42 +153,6 @@ export default function Project() {
       links: [
         { url: "https://github.com/Durgaprasad-2002/", text: "Source Codes" },
       ],
-    },
-    {
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY23c3UXCGS-CXNb-SSvsP5DFoGGzzDhY4s6-EYInUtA&s",
-      altText: "DNS Management Tool",
-      title: "DNS Management Tool",
-      description:
-        "Developed a robust DNS management tool designed to handle DNS configurations with features comparable to AWS Route 53.",
-      links: [
-        {
-          url: "https://github.com/prasaddurga31/FrontEndDNS",
-          text: "FrontEnd Code",
-        },
-        {
-          url: "https://github.com/prasaddurga31/BackEndDNS",
-          text: "BackEnd Code",
-        },
-      ],
-    },
-    {
-      image:
-        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPSWfTFhRH5i2L7R8T4VnZak5ozoCQ6yKoVE6ENY1stxm8OkMK",
-      altText: "STAAR Exports & Imports",
-      title: "STAAR Exports & Imports (Freelance)",
-      description:
-        "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
-      links: [{ url: "https://staarfoods.com/", text: "Live Link" }],
-    },
-    {
-      image:
-        "https://lawacademybhopal.com/wp-content/uploads/2024/02/mba-after-law-llb.jpg",
-      altText: "Legis Code",
-      title: "Legis Code (Freelance)",
-      description:
-        "Led the development of Legis Code, a comprehensive platform for legal practitioners, featuring a categorized repository of laws and a dynamic blog platform.",
-      links: [{ url: "https://hasiniworld.in/", text: "Live Link" }],
     },
   ];
 

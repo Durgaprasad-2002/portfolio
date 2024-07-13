@@ -106,20 +106,27 @@ const About = () => {
           <div className="row">
             <div className="col-md-4">
               <div className="edu-card">
-                <h4>B.Tech</h4>
-                <h5>Electronics and Communication Engineering</h5>
+                <h4>
+                  B.Tech,{" "}
+                  <span className="group">
+                    Electronics and Communication Engineering
+                  </span>
+                </h4>
+                {/* <h5>Electronics and Communication Engineering</h5> */}
                 <h6>
-                  2020 - 2024 <span>7.33 CGPA</span>
+                  2020 - 2024 <span>7.3 CGPA</span>
                 </h6>
                 <h6>Aditya College Of Engineering, Surampalem</h6>
               </div>
             </div>
             <div className="col-md-4">
               <div className="edu-card">
-                <h4>Intermediate</h4>
-                <h5>M.P.C</h5>
+                <h4>
+                  Intermediate, <span className="group">M.P.C</span>
+                </h4>
+                {/* <h5>M.P.C</h5> */}
                 <h6>
-                  2018 - 2020 <span>9.55 CGPA</span>
+                  2018 - 2020 <span>9.5 CGPA</span>
                 </h6>
                 <h6>Aditya Junior College, Mandapeta</h6>
               </div>
@@ -128,7 +135,7 @@ const About = () => {
               <div className="edu-card">
                 <h4>Secondary School</h4>
                 <h6>
-                  2017 - 2018 <span>9.30 CGPA</span>
+                  2017 - 2018 <span>9.3 CGPA</span>
                 </h6>
                 <h6>C.A.M.P School, Ramachandrapuram</h6>
               </div>
